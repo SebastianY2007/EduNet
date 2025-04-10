@@ -9,13 +9,14 @@ import java.util.List;
 
 public class Principal {
     public static void main (String[] args) {
-
+        // Institucion 1
         Institucion institucion1 = new Institucion(132, "Universidad Politecnica Salesiana");
         institucion1.addDireccion("Ecuador", "Azuay", "Cuenca", "Calle Vieja", "Elia Liut", "12-30", TipoDireccion.INSTITUCION);
         institucion1.addSede("Cuenca");
         institucion1.addAsignaciones(new Asignacion(new GregorianCalendar(2024, Calendar.SEPTEMBER, 15), Rol.ESTUDIANTE));
         institucion1.addAsignaciones(new Asignacion(new GregorianCalendar(2020, Calendar.JANUARY, 26), Rol.DOCENTE));
 
+        // Institucion 2
         Institucion institucion2 = new Institucion(205, "Universidad de Cuenca");
         institucion2.addDireccion("Ecuador", "Azuay", "Cuenca", "Av. 12 de Abril", "Agustín Cueva", "251", TipoDireccion.INSTITUCION);
         institucion2.addSede("Cuenca");
