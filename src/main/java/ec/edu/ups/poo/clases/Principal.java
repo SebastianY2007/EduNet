@@ -23,7 +23,6 @@ public class Principal {
         institucion2.addAsignaciones(new Asignacion(new GregorianCalendar(2022, Calendar.OCTOBER, 10), Rol.ADMINISTRATIVO));
         institucion2.addAsignaciones(new Asignacion(new GregorianCalendar(2024, Calendar.APRIL, 18), Rol.VISITANTE));
 
-
         Estudiante estudiante = new Estudiante("0107271777", "Sebastian", "Yupangui", "0995399230", "derlis567y@gmail.com", "Computación");
         estudiante.addDirecciones(new Direccion("Paute", "Zhumir", "15-26", "Paute", "Azuay", "Ecuador", TipoDireccion.CASA));
 
