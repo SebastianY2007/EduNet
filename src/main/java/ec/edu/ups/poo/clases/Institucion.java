@@ -68,12 +68,11 @@ public class Institucion {
 
     @Override
     public String toString() {
-        return "Institucion{" +
-                "idOficial=" + idOficial +
-                ", nombre='" + nombre + '\'' +
-                ", sedes=" + sedes +
-                ", direccion=" + direccion +
-                ", asignaciones=" + asignaciones +
-                '}';
+        return "INSTITUCIÓN:" +
+                "\nID Oficial: " + idOficial +
+                "\nNombre: " + nombre + '\'' +
+                "\nSedes: " + sedes +
+                "\nDireccion: " + direccion +
+                "\nAsignaciones: " + asignaciones + "\n";
     }
 }

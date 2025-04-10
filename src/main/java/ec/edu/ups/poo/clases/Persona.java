@@ -74,13 +74,11 @@ public class Persona {
 
     @Override
     public String toString() {
-        return "Persona{" +
-                "cedula='" + cedula + '\'' +
-                ", nombre='" + nombre + '\'' +
-                ", apellido='" + apellido + '\'' +
-                ", telefono='" + telefono + '\'' +
-                ", correoElectronico='" + correoElectronico + '\'' +
-                ", direcciones=" + direcciones +
-                '}';
+        return "\nCedula: " + cedula +
+                "\nNombre: " + nombre +
+                "\nApellido: " + apellido +
+                "\nTelefono: " + telefono +
+                "\nCorreo Electronico: " + correoElectronico +
+                "\nDirecciones: " + direcciones + "\n";
     }
 }

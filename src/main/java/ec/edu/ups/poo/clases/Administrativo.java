@@ -31,9 +31,8 @@ public class Administrativo extends Persona {
 
     @Override
     public String toString() {
-        return "Administrativo{" +
-                "cargos=" + cargos +
-                ", responsabilidades=" + responsabilidades +
-                '}';
+        return "Administrativo:" +
+                "\nCargos: " + cargos +
+                "\nResponsabilidades: " + responsabilidades + "\n";
     }
 }

@@ -1,15 +1,27 @@
 package ec.edu.ups.poo.clases;
 
 import ec.edu.ups.poo.enums.Rol;
+
+import java.text.SimpleDateFormat;
 import java.util.GregorianCalendar;
 
 public class Asignacion {
+    private Persona persona;
     private GregorianCalendar fechaInicio;
     private Rol rol;
 
-    public Asignacion(GregorianCalendar fechaInicio, Rol rol) {
+    public Asignacion(Persona persona, GregorianCalendar fechaInicio, Rol rol) {
+        this.persona = persona;
         this.fechaInicio = fechaInicio;
         this.rol = rol;
+    }
+
+    public Persona getPersona() {
+        return persona;
+    }
+
+    public void setPersona(Persona persona) {
+        this.persona = persona;
     }
 
     public GregorianCalendar getFechaInicio() {
@@ -30,12 +42,7 @@ public class Asignacion {
 
     @Override
     public String toString() {
-        int año = fechaInicio.get(GregorianCalendar.YEAR);
-        int mes = fechaInicio.get(GregorianCalendar.MONTH) + 1;
-        int dia = fechaInicio.get(GregorianCalendar.DAY_OF_MONTH);
-        return "Asignacion{" +
-                "fechaInicio=" + año + "-" + mes + "-" + dia +
-                ", rol=" + rol +
-                '}';
+        SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
+        return persona + "Fecha Inicio: "+formato.format(fechaInicio.getTime()) + "\n";
     }
 }

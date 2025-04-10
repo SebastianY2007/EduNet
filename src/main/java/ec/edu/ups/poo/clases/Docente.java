@@ -34,9 +34,8 @@ public class Docente extends Persona {
 
     @Override
     public String toString() {
-        return "Docente{" +
-                "titulosAcademicos=" + titulosAcademicos +
-                ", areasDeEspecializacion=" + areasDeEspecializacion +
-                '}';
+        return super.toString() +
+                "Titulos Academicos: " + titulosAcademicos +
+                "\nAreas de Especializacion: " + areasDeEspecializacion + "\n";
     }
 }
